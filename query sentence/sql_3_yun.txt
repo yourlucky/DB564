@@ -1,0 +1,15 @@
+It's not work but anwer will be
+
+SELECT COUNT(ITEM_ID)
+FROM ITEMS
+WHERE Category_5 IS NULL
+AND Category_4 IS NOT NULL
+
+
+
+When we try this query
+It seems wrong......
+
+SELECT Category_1, Category_2, Category_3, Category_4, Category_5, Category_6
+FROM Items
+LIMIT 10;

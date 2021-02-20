@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT(I.User_ID))
+FROM Items as I, Bid as B
+WHERE I.User_ID = B.User_ID;

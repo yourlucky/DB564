@@ -1,0 +1,4 @@
+SELECT COUNT(DISTINCT(I.User_ID))
+FROM Items as I, Users as U
+WHERE U.User_ID = I.User_ID
+AND U.Rating>1000 ;

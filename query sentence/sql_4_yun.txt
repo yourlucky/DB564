@@ -1,0 +1,5 @@
+SELECT Item_ID
+FROM ITEMS AS I
+WHERE I.curretnly=
+(SELECT MAX(p.currently)
+FROM ITEMS AS p);

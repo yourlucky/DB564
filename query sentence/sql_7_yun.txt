@@ -1,0 +1,71 @@
+SELECT COUNT(temp.Total)
+FROM(
+SELECT I.Category_1 as Total
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_1 IS NOT NULL
+
+UNION
+
+SELECT I.Category_2
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_2 IS NOT NULL
+
+
+UNION
+
+SELECT I.Category_3
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_3 IS NOT NULL
+
+
+UNION
+
+SELECT I.Category_4
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_4 IS NOT NULL
+
+
+UNION
+
+SELECT I.Category_5
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_5 IS NOT NULL
+
+
+UNION
+
+SELECT I.Category_6
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_1 IS NOT NULL
+
+
+UNION
+
+SELECT I.Category_7
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_7 IS NOT NULL
+
+
+
+UNION
+
+SELECT I.Category_8
+FROM Items as I, Bid as B
+WHERE B.Item_ID = I.Item_ID
+AND B.Amount>1000
+AND I.Category_8 IS NOT NULL
+) as temp;
